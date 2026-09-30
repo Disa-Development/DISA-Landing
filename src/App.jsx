@@ -101,9 +101,8 @@ function Navbar() {
     <header className="navbar">
       <div className="container nav-container">
         <a href="#home" className="logo" onClick={closeMenu}>
-          <Compass size={32} />
-          <span>DISA</span>
-        </a>
+  <img src="/images/logo.png" alt="DISA Travel" />
+</a>
 
         <nav className={menuOpen ? "nav-links open" : "nav-links"}>
           <a href="#home" onClick={closeMenu}>Trang chủ</a>
@@ -403,10 +402,9 @@ function Footer() {
     <footer className="footer">
       <div className="container footer-container">
         <div>
-          <div className="footer-logo">
-            <Compass size={32} />
-            <span>DISA</span>
-          </div>
+<div className="footer-logo">
+  <img src="/images/logo.png" alt="DISA Travel" />
+</div>
 
           <p>Explore more. Experience more.</p>
         </div>
