@@ -403,7 +403,11 @@ function Footer() {
       <div className="container footer-container">
         <div>
 <div className="footer-logo">
-  <img src="/images/logo.png" alt="DISA Travel" />
+  <img
+    src="/images/logo.png"
+    alt="DISA Travel"
+    className="footer-logo-img"
+  />
 </div>
 
           <p>Explore more. Experience more.</p>
