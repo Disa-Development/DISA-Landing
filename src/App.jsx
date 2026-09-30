@@ -357,16 +357,6 @@ function UserGuide() {
 }
 
 function DownloadBanner() {
-  // Đổi thành true khi đã thêm disa.apk vào public/downloads.
-  <a
-  href="https://disatravel.id.vn/downloads/DisaTravel.apk"
-  className="btn btn-gold download-button"
-  download
->
-  <Download size={23} />
-  Tải DISA APK
-</a>
-
   return (
     <section className="download-section" id="download">
       <div className="container download-container">
@@ -384,31 +374,30 @@ function DownloadBanner() {
           và tích lũy điểm thưởng.
         </p>
 
-        {apkReady ? (
-          <a
-            href="/downloads/disa.apk"
-            download="DISA.apk"
-            className="btn btn-gold download-button"
-          >
-            <Download size={23} />
-            Tải DISA APK
-          </a>
-        ) : (
-          <span className="btn btn-disabled download-button">
-            <Download size={23} />
-            APK sắp ra mắt
-          </span>
-        )}
+        <a
+          href="https://disatravel.id.vn/downloads/DisaTravel.apk"
+          className="btn btn-gold download-button"
+          download="DisaTravel.apk"
+        >
+          <Download size={23} />
+          Tải DISA APK
+        </a>
 
         <div className="download-info">
-          <span><CheckCircle size={17} /> Android</span>
-          <span><CheckCircle size={17} /> Miễn phí</span>
+          <span>
+            <CheckCircle size={17} />
+            Android
+          </span>
+
+          <span>
+            <CheckCircle size={17} />
+            Miễn phí
+          </span>
         </div>
       </div>
     </section>
   );
 }
-
 function Footer() {
   return (
     <footer className="footer">
