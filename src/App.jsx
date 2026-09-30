@@ -358,7 +358,14 @@ function UserGuide() {
 
 function DownloadBanner() {
   // Đổi thành true khi đã thêm disa.apk vào public/downloads.
-  const apkReady = false;
+  <a
+  href="https://disatravel.id.vn/downloads/DisaTravel.apk"
+  className="btn btn-gold download-button"
+  download
+>
+  <Download size={23} />
+  Tải DISA APK
+</a>
 
   return (
     <section className="download-section" id="download">
