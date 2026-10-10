@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import { useState } from "react";
 import {
   Plane,
@@ -108,14 +108,19 @@ function Navbar() {
           <a href="#home" onClick={closeMenu}>Trang chủ</a>
           <a href="#features" onClick={closeMenu}>Tính năng</a>
           <a href="#screenshots" onClick={closeMenu}>Giao diện</a>
-          <a href="#guide" onClick={closeMenu}>Hướng dẫn</a>
-          <a
-            href="#download"
-            className="nav-download"
-            onClick={closeMenu}
-          >
-            Tải ứng dụng
-          </a>
+<a href="#guide" onClick={closeMenu}>Hướng dẫn</a>
+
+<Link to="/partner" onClick={closeMenu}>
+  Đối tác doanh nghiệp
+</Link>
+
+<a
+  href="#download"
+  className="nav-download"
+  onClick={closeMenu}
+>
+  Tải ứng dụng
+</a>
         </nav>
 
         <button
