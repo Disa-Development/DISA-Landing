@@ -85,16 +85,19 @@ img {
   width: 340px;
   height: 78px;
   flex-shrink: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .logo img {
   display: block;
   width: 340px;
   height: 78px;
-  max-width: 300px;
-  max-height: 700px;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
+  object-position: left center;
+  transform: scale(2.5);
+  transform-origin: left center;
 }
 
 .nav-links {

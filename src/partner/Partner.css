@@ -56,33 +56,27 @@
 
 
 .partner-brand {
-
   display: flex;
-
   align-items: center;
-
-  gap: 10px;
-
+  justify-content: flex-start;
+  gap: 12px;
   color: #12386b;
-
   text-decoration: none;
-
   font-weight: 800;
-
+  flex-shrink: 0;
 }
-
-
 
 .partner-brand img {
-
-  width: 44px;
-
-  height: 44px;
-
+  display: block;
+  width: 240px;
+  height: 105px;
+  max-width: none;
+  max-height: none;
   object-fit: contain;
-
+  object-position: left center;
+  transform: scale(1.8);
+  transform-origin: left center;
 }
-
 
 
 .partner-brand span {
@@ -1329,3 +1323,11 @@
 
 }
 .partner-page h1, .partner-page h2, .partner-page h3, .partner-page button, .partner-page input, .partner-page select, .partner-page textarea { font-family: inherit; }
+.partner-nav .partner-container {
+  width: 94%;
+  max-width: none;
+}
+.partner-brand img {
+  transform: scale(1.4);
+  transform-origin: left center;
+}
