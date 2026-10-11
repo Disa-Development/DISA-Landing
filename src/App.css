@@ -1,5 +1,5 @@
 :root {
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif;
   color: #183153;
   background: #fff;
   font-synthesis: none;
@@ -82,16 +82,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 300px;
-  height: 700px;
+  width: 340px;
+  height: 78px;
   flex-shrink: 0;
   overflow: hidden;
 }
 
 .logo img {
   display: block;
-  width: 300px;
-  height: 700px;
+  width: 340px;
+  height: 78px;
   max-width: 300px;
   max-height: 700px;
   object-fit: contain;
@@ -881,15 +881,15 @@ img {
   }
 
   .logo {
-    width: 100px;
-    height: 38px;
+    width: 155px;
+    height: 58px;
   }
 
   .logo img {
-    width: 100px;
-    height: 38px;
-    max-width: 100px;
-    max-height: 38px;
+    width: 155px;
+    height: 58px;
+    max-width: 155px;
+    max-height: 58px;
   }
 
   .menu-button {
@@ -1129,12 +1129,14 @@ img {
   }
 
   .logo {
-    width: 95px;
-    height: 36px;
+    width: 140px;
+    height: 54px;
   }
 
   .logo img {
-    width: 95px;
-    height: 36px;
+    width: 140px;
+    height: 54px;
   }
 }
+/* Consistent Vietnamese typography */
+h1, h2, h3, h4, h5, h6, button, a { font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif; }

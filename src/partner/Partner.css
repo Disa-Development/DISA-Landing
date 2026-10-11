@@ -1,278 +1,555 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap");
+
 
 .partner-page {
+
   color: #17324f;
+
   background: #ffffff;
-  font-family: Inter, Arial, sans-serif;
+
+  font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif;
+
 }
+
+
 
 .partner-container {
+
   width: min(1180px, 90%);
+
   margin: 0 auto;
+
 }
+
+
 
 .partner-nav {
+
   position: sticky;
+
   top: 0;
+
   z-index: 10;
+
   background: #ffffff;
+
   border-bottom: 1px solid #e7edf4;
+
 }
+
+
 
 .partner-nav-inner {
+
   min-height: 78px;
+
   display: flex;
+
   align-items: center;
+
   justify-content: space-between;
+
   gap: 24px;
+
 }
+
+
 
 .partner-brand {
+
   display: flex;
+
   align-items: center;
+
   gap: 10px;
+
   color: #12386b;
+
   text-decoration: none;
+
   font-weight: 800;
+
 }
+
+
 
 .partner-brand img {
+
   width: 44px;
+
   height: 44px;
+
   object-fit: contain;
+
 }
+
+
 
 .partner-brand span {
+
   font-size: 12px;
+
   letter-spacing: 2px;
+
 }
+
+
 
 .partner-nav-links {
+
   display: flex;
+
   gap: 26px;
+
 }
+
+
 
 .partner-nav-links a,
+
 .partner-footer a {
+
   color: #17324f;
+
   text-decoration: none;
+
 }
 
+
+
 .partner-nav-cta,
+
 .partner-btn {
+
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 9px;
+
   padding: 13px 20px;
+
   border-radius: 10px;
+
   text-decoration: none;
+
   font-weight: 700;
+
 }
 
+
+
 .partner-nav-cta,
+
 .partner-btn-blue {
+
   color: #ffffff;
+
   background: #12386b;
+
 }
+
+
 
 .partner-hero {
+
   padding: 90px 0;
+
   overflow: hidden;
+
   background: linear-gradient(135deg, #f2f8ff, #ffffff 65%, #e9f9fc);
+
 }
+
+
 
 .partner-hero-grid,
+
 .partner-benefit-layout,
+
 .partner-display-grid {
+
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+
   align-items: center;
+
   gap: 60px;
+
 }
+
+
 
 .partner-eyebrow,
+
 .partner-kicker {
+
   color: #0089b7;
+
   font-size: 12px;
+
   font-weight: 800;
+
   letter-spacing: 2px;
+
 }
+
+
 
 .partner-hero h1 {
+
   margin: 20px 0;
+
   font-size: clamp(38px, 5vw, 62px);
+
   line-height: 1.12;
+
 }
+
+
 
 .partner-hero h1 span {
+
   color: #08a9d4;
+
 }
+
+
 
 .partner-hero-copy > p,
+
 .partner-section-heading > p,
+
 .partner-benefit-layout > div > p,
+
 .partner-display-points > p {
+
   color: #63758a;
+
   line-height: 1.8;
+
 }
+
+
 
 .partner-hero-actions {
+
   display: flex;
+
   flex-wrap: wrap;
+
   gap: 12px;
+
   margin: 28px 0;
+
 }
+
+
 
 .partner-btn-white {
+
   color: #12386b;
+
   border: 1px solid #d5e0ec;
+
   background: #ffffff;
+
 }
+
+
 
 .partner-trust-line {
+
   display: flex;
+
   align-items: center;
+
   gap: 8px;
+
   color: #557087;
+
   font-size: 13px;
+
 }
+
+
 
 .partner-hero-art {
+
   position: relative;
+
   padding: 25px;
+
 }
+
+
 
 .partner-art-glow {
+
   position: absolute;
+
   inset: 5%;
+
   border-radius: 50%;
+
   background: #bcecf6;
+
   filter: blur(60px);
+
 }
+
+
 
 .partner-app-card {
+
   position: relative;
+
   z-index: 1;
+
   max-width: 420px;
+
   margin: auto;
+
   padding: 24px;
+
   border: 1px solid #e5edf5;
+
   border-radius: 24px;
+
   background: #ffffff;
+
   box-shadow: 0 25px 70px #17324f18;
+
 }
+
+
 
 .partner-app-top,
+
 .partner-listing,
+
 .partner-floating-note,
+
 .partner-benefit-highlight,
+
 .partner-form-intro,
+
 .partner-commission-formula {
+
   display: flex;
+
   align-items: center;
+
   gap: 14px;
+
 }
+
+
 
 .partner-mini-logo {
+
   display: grid;
+
   width: 45px;
+
   height: 45px;
+
   place-items: center;
+
   border-radius: 14px;
+
   color: white;
+
   background: #12386b;
+
   font-size: 22px;
+
   font-weight: 800;
+
 }
+
+
 
 .partner-app-top small,
+
 .partner-listing-copy small,
+
 .partner-listing-copy span {
+
   display: block;
+
   margin-top: 5px;
+
   color: #708195;
+
 }
+
+
 
 .partner-destination-image,
+
 .partner-preview-cover {
+
   display: flex;
+
   min-height: 170px;
+
   flex-direction: column;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 10px;
+
   margin: 22px 0;
+
   border-radius: 16px;
+
   color: #ffffff;
+
   background: linear-gradient(135deg, #087da7, #65c9d7);
+
   font-weight: 800;
+
 }
+
+
 
 .partner-listing-thumb,
+
 .partner-preview-photo {
+
   display: grid;
+
   width: 65px;
+
   height: 65px;
+
   flex-shrink: 0;
+
   place-items: center;
+
   border-radius: 14px;
+
   color: #087da7;
+
   background: #e7f8fc;
+
 }
+
+
 
 .partner-floating-note {
+
   position: relative;
+
   z-index: 2;
+
   width: fit-content;
+
   max-width: 100%;
+
   margin: -15px 0 0 -15px;
+
   padding: 16px;
+
   border-radius: 14px;
+
   background: white;
+
   box-shadow: 0 12px 40px #17324f18;
+
 }
+
+
 
 .partner-floating-note small {
+
   display: block;
+
   margin-top: 5px;
+
   color: #708195;
+
 }
+
+
 
 .partner-mockup-caption,
+
 .partner-preview-caption {
+
   position: relative;
+
   color: #708195;
+
   font-size: 12px;
+
   line-height: 1.6;
+
   text-align: center;
+
 }
+
+
 
 .partner-types-section,
+
 .partner-benefits-section,
+
 .partner-display-section,
+
 .partner-commission-section,
+
 .partner-requirements-section,
+
 .partner-register-section,
+
 .partner-faq-section {
+
   padding: 80px 0;
+
 }
+
+
 
 .partner-section-heading,
+
 .partner-register-heading {
+
   max-width: 720px;
+
   margin: 0 auto 40px;
+
   text-align: center;
+
 }
 
+
+
 .partner-section-heading h2,
+
 .partner-benefit-layout h2,
+
 .partner-display-points h2,
+
 .partner-register-heading h2 {
+
   margin: 15px 0;
+
   color: #12386b;
+
   font-size: clamp(28px, 4vw, 42px);
+
   line-height: 1.2;
+
 }
+
+
 
 .partner-type-grid,
 .partner-commission-grid,
@@ -282,380 +559,773 @@
   gap: 22px;
 }
 
-.partner-type-card,
-.partner-commission-card,
-.partner-requirements-card {
-  padding: 28px;
-  border: 1px solid #e4edf5;
-  border-radius: 18px;
-  background: #ffffff;
+/* Khung 03 chiếm toàn bộ chiều rộng, nội dung ở giữa */
+.partner-commission-grid .partner-commission-card-wide {
+  grid-column: 1 / -1;
+  width: 100%;
+  text-align: center;
 }
+.partner-commission-card-wide > svg {
+  display: block;
+  margin: 0 auto 18px;
+}
+.partner-commission-card-wide > p {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partner-type-card,
+
+.partner-commission-card,
+
+.partner-requirements-card {
+
+  padding: 28px;
+
+  border: 1px solid #e4edf5;
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+}
+
+
 
 .partner-type-card p,
+
 .partner-commission-card p,
+
 .partner-requirements-card p {
+
   color: #63758a;
+
   line-height: 1.7;
+
 }
+
+
 
 .partner-icon-box {
+
   display: grid;
+
   width: 54px;
+
   height: 54px;
+
   place-items: center;
+
   border-radius: 15px;
+
   color: #087da7;
+
   background: #e7f8fc;
+
 }
+
+
 
 .partner-benefits-section {
+
   background: #f3f8fc;
+
 }
+
+
 
 .partner-benefit-panel {
+
   display: grid;
+
   gap: 18px;
+
   padding: 28px;
+
   border-radius: 20px;
+
   background: #ffffff;
+
   box-shadow: 0 15px 45px #17324f0c;
+
 }
+
+
 
 .partner-benefit-highlight svg,
+
 .partner-verify-note svg {
+
   flex-shrink: 0;
+
   color: #079b88;
+
 }
+
+
 
 .partner-preview-wrap {
+
   max-width: 360px;
+
   margin: auto;
+
 }
+
+
 
 .partner-preview-phone {
+
   padding: 22px;
+
   border: 7px solid #17324f;
+
   border-radius: 34px;
+
   background: #ffffff;
+
   box-shadow: 0 20px 60px #17324f1c;
+
 }
+
+
 
 .partner-preview-status {
+
   margin-bottom: 22px;
+
   font-size: 12px;
+
 }
+
+
 
 .partner-preview-search {
+
   margin-top: 16px;
+
   padding: 12px;
+
   border-radius: 10px;
+
   background: #f0f4f8;
+
   color: #718096;
+
   font-size: 12px;
+
 }
+
+
 
 .partner-preview-cover {
+
   min-height: 120px;
+
 }
+
+
 
 .partner-preview-subtitle {
+
   color: #718096;
+
   font-size: 10px;
+
   font-weight: 800;
+
   letter-spacing: 1px;
+
 }
+
+
 
 .partner-preview-business {
+
   display: flex;
+
   align-items: center;
+
   gap: 12px;
+
   margin: 15px 0 25px;
+
 }
+
+
 
 .partner-preview-business p {
+
   margin-bottom: 0;
+
   color: #718096;
+
   font-size: 11px;
+
 }
+
+
 
 .partner-preview-tabs {
+
   display: flex;
+
   justify-content: space-between;
+
   padding-top: 15px;
+
   border-top: 1px solid #e4edf5;
+
   color: #718096;
+
   font-size: 10px;
+
 }
+
+
 
 .partner-commission-card {
+
   position: relative;
+
 }
+
+
 
 .partner-commission-step {
+
   margin-bottom: 18px;
+
   color: #08a9d4;
+
   font-size: 13px;
+
   font-weight: 800;
+
 }
+
+
 
 .partner-commission-card > svg,
+
 .partner-requirements-card > svg {
+
   color: #087da7;
+
 }
+
+
 
 .partner-commission-formula {
+
   align-items: flex-start;
+
   margin-top: 25px;
+
   padding: 24px;
+
   border-radius: 16px;
+
   background: #eaf8fc;
+
 }
+
+
 
 .partner-commission-formula > svg {
+
   flex-shrink: 0;
+
   color: #087da7;
+
 }
+
+
 
 .partner-commission-formula p,
+
 .partner-legal-note,
+
 .partner-form-disclaimer {
+
   color: #63758a;
+
   font-size: 13px;
+
   line-height: 1.7;
+
 }
+
+
 
 .partner-requirements-card ul,
+
 .partner-display-points ul {
+
   padding-left: 22px;
+
   color: #63758a;
+
   line-height: 1.9;
+
 }
+
+
 
 .partner-verify-note {
+
   display: flex;
+
   align-items: flex-start;
+
   gap: 8px;
+
   margin-top: 20px;
+
   font-size: 13px;
+
 }
+
+
 
 .partner-legal-note {
+
   margin-top: 24px;
+
 }
+
+
 
 .partner-register-section {
+
   background: #f3f8fc;
+
 }
+
+
 
 .partner-form {
+
   max-width: 850px;
+
   margin: auto;
+
   padding: 32px;
+
   border: 1px solid #e4edf5;
+
   border-radius: 20px;
+
   background: #ffffff;
+
 }
+
+
 
 .partner-form-intro {
+
   align-items: flex-start;
+
   margin-bottom: 25px;
+
 }
+
+
 
 .partner-form-intro > svg {
+
   flex-shrink: 0;
+
   color: #087da7;
+
 }
+
+
 
 .partner-form-intro p {
+
   color: #63758a;
+
   line-height: 1.6;
+
 }
+
+
 
 .partner-form-grid {
+
   display: grid;
+
   grid-template-columns: repeat(2, minmax(0, 1fr));
+
   gap: 20px;
+
 }
+
+
 
 .partner-form-grid label {
+
   display: grid;
+
   gap: 8px;
+
   color: #17324f;
+
   font-size: 13px;
+
   font-weight: 700;
+
 }
+
+
 
 .partner-form-grid input,
+
 .partner-form-grid select,
+
 .partner-form-grid textarea {
+
   width: 100%;
+
   box-sizing: border-box;
+
   padding: 13px;
+
   border: 1px solid #d6e0ea;
+
   border-radius: 9px;
+
   background: #ffffff;
+
   color: #17324f;
+
   font: inherit;
+
   font-weight: 400;
+
 }
+
+
 
 .partner-form-grid input:focus,
+
 .partner-form-grid select:focus,
+
 .partner-form-grid textarea:focus {
+
   outline: 2px solid #8ddbec;
+
   border-color: #08a9d4;
+
 }
+
+
 
 .partner-form-full {
+
   grid-column: 1 / -1;
+
 }
+
+
 
 .partner-consent {
+
   display: flex;
+
   align-items: flex-start;
+
   gap: 10px;
+
   margin: 24px 0;
+
   color: #63758a;
+
   font-size: 13px;
+
   line-height: 1.6;
+
 }
+
+
 
 .partner-consent input {
+
   margin-top: 4px;
+
 }
+
+
 
 .partner-submit {
+
   border: 0;
+
   cursor: pointer;
+
 }
+
+
 
 .partner-form-disclaimer {
+
   margin-bottom: 0;
+
 }
+
+
 
 .partner-form-success {
+
   max-width: 700px;
+
   margin: auto;
+
   padding: 35px;
+
   border-radius: 20px;
+
   background: #ffffff;
+
   text-align: center;
+
 }
+
+
 
 .partner-form-success > svg {
+
   color: #079b88;
+
 }
+
+
 
 .partner-faq-list {
+
   max-width: 850px;
+
   margin: auto;
+
 }
+
+
 
 .partner-faq-list details {
+
   padding: 20px 0;
+
   border-bottom: 1px solid #e4edf5;
+
 }
+
+
 
 .partner-faq-list summary {
+
   color: #12386b;
+
   cursor: pointer;
+
   font-weight: 700;
+
 }
+
+
 
 .partner-faq-list details p {
+
   color: #63758a;
+
   line-height: 1.7;
+
 }
+
+
 
 .partner-footer {
+
   padding-top: 35px;
+
   color: #ffffff;
+
   background: #102d50;
+
 }
+
+
 
 .partner-footer-inner {
+
   display: flex;
+
   justify-content: space-between;
+
   gap: 25px;
+
   padding-bottom: 30px;
+
 }
+
+
 
 .partner-footer p {
+
   color: #c5d4e5;
+
 }
+
+
 
 .partner-footer a {
+
   color: #ffffff;
+
 }
+
+
 
 .partner-footer-bottom {
+
   padding: 18px;
+
   border-top: 1px solid #ffffff20;
+
   color: #c5d4e5;
+
   font-size: 12px;
+
   text-align: center;
+
 }
+
+
 
 @media (max-width: 760px) {
+
   .partner-nav-inner {
+
     flex-wrap: wrap;
+
     padding: 12px 0;
+
   }
+
+
 
   .partner-nav-links {
+
     order: 3;
+
     width: 100%;
+
     justify-content: space-between;
+
     gap: 10px;
+
     font-size: 12px;
+
   }
+
+
 
   .partner-nav-cta {
+
     padding: 10px 12px;
+
     font-size: 12px;
+
   }
+
+
 
   .partner-hero {
+
     padding: 55px 0;
+
   }
+
+
 
   .partner-hero-grid,
+
   .partner-benefit-layout,
+
   .partner-display-grid {
+
     grid-template-columns: 1fr;
+
     gap: 30px;
+
   }
+
+
 
   .partner-hero-art {
+
     padding: 10px;
+
   }
+
+
 
   .partner-floating-note {
+
     margin-left: 0;
+
   }
+
+
 
   .partner-types-section,
+
   .partner-benefits-section,
+
   .partner-display-section,
+
   .partner-commission-section,
+
   .partner-requirements-section,
+
   .partner-register-section,
+
   .partner-faq-section {
+
     padding: 55px 0;
+
   }
+
+
 
   .partner-type-grid,
+
   .partner-commission-grid,
+
   .partner-requirements-grid,
+
   .partner-form-grid {
+
     grid-template-columns: 1fr;
+
   }
+
+
 
   .partner-form {
+
     padding: 22px;
+
   }
 
+
+
   .partner-footer-inner {
+
     flex-direction: column;
+
   }
+
 }
+.partner-page h1, .partner-page h2, .partner-page h3, .partner-page button, .partner-page input, .partner-page select, .partner-page textarea { font-family: inherit; }
