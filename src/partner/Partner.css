@@ -1386,3 +1386,50 @@
 @media (max-width: 760px) {
   .partner-type-image { height: 200px; }
 }
+/* Phóng to logo DISA trên Navbar */
+.partner-nav .partner-brand img {
+  width: 260px;
+  height: 165px;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  display: block;
+}
+
+.partner-nav .partner-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* Giữ chiều cao Navbar hợp lý */
+.partner-nav-inner {
+  min-height: 85px;
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .partner-nav .partner-brand img {
+    width: 120px;
+    height: 55px;
+  }
+}
+/* Đưa logo sát mép trái hơn */
+.partner-nav .partner-container {
+  width: 96%;
+  max-width: none;
+  margin: 0 auto;
+}
+
+/* Giữ logo lớn */
+.partner-nav .partner-brand img {
+  width: 260px;
+  height: 165px;
+  object-fit: contain;
+}
+
+/* Giữ khoảng cách giữa logo và PARTNER */
+.partner-nav .partner-brand {
+  gap: 10px;
+}
