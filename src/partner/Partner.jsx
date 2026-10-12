@@ -40,6 +40,8 @@ const partnerTypes = [
 
     title: "Nhà hàng và quán cà phê",
 
+    image: "/images/partner-restaurant.png",
+
     description:
 
       "Tiếp cận khách du lịch đang tìm kiếm địa điểm ăn uống và trải nghiệm ẩm thực.",
@@ -51,6 +53,8 @@ const partnerTypes = [
     icon: Hotel,
 
     title: "Khách sạn và lưu trú",
+
+    image: "/images/partner-hotel.png",
 
     description:
 
@@ -64,6 +68,8 @@ const partnerTypes = [
 
     title: "Điểm tham quan du lịch",
 
+    image: "/images/partner-attraction.png",
+
     description:
 
       "Quảng bá địa điểm, hoạt động tham quan và trải nghiệm địa phương.",
@@ -75,6 +81,8 @@ const partnerTypes = [
     icon: Store,
 
     title: "Dịch vụ du lịch khác",
+
+    image: "/images/partner-services.png",
 
     description:
 
@@ -232,85 +240,27 @@ function Partner() {
 
 
             <div className="partner-hero-art">
-
-              <div className="partner-art-glow" />
-
-
-
-              <div className="partner-app-card">
-
-                <div className="partner-app-top">
-
-                  <div className="partner-mini-logo">D</div>
-
-                  <div>
-
-                    <strong>Khám phá quanh bạn</strong>
-
-                    <small>Gợi ý trải nghiệm du lịch</small>
-
-                  </div>
-
-                </div>
-
-
-
-                <div className="partner-destination-image">
-
-                  <MapPin size={30} />
-
-                  <span>ĐIỂM ĐẾN NỔI BẬT</span>
-
-                </div>
-
-
-
-                <div className="partner-listing">
-
-                  <div className="partner-listing-thumb">
-
-                    <Utensils size={25} />
-
-                  </div>
-
-                  <div className="partner-listing-copy">
-
-                    <strong>Thương hiệu của bạn</strong>
-
-                    <small>Hình ảnh · Dịch vụ · Thông tin</small>
-
-                    <span>Hồ sơ đối tác mẫu</span>
-
-                  </div>
-
-                </div>
-
+              <div className="partner-art-glow" aria-hidden="true" />
+              <div className="partner-screen-gallery" aria-label="Hình ảnh ứng dụng DISA Travel">
+                <img
+                  className="partner-screen partner-screen-left"
+                  src="/images/disa-screen-05.jpg"
+                  alt="Lịch trình du lịch và các địa điểm hợp tác trên DISA Travel"
+                  loading="lazy"
+                />
+                <img
+                  className="partner-screen partner-screen-main"
+                  src="/images/disa-screen-03.jpg"
+                  alt="Trang chủ ứng dụng DISA Travel"
+                  loading="lazy"
+                />
+                <img
+                  className="partner-screen partner-screen-right"
+                  src="/images/disa-screen-11.jpg"
+                  alt="Voucher và ưu đãi trên DISA Travel"
+                  loading="lazy"
+                />
               </div>
-
-
-
-              <div className="partner-floating-note">
-
-                <TrendingUp size={21} />
-
-                <div>
-
-                  <strong>Mở rộng cơ hội tiếp cận</strong>
-
-                  <small>Kết nối cùng cộng đồng du lịch</small>
-
-                </div>
-
-              </div>
-
-
-
-              <p className="partner-mockup-caption">
-
-                Hình minh họa giao diện đối tác — không phải ảnh chụp ứng dụng thật.
-
-              </p>
-
             </div>
 
           </div>
@@ -354,6 +304,8 @@ function Partner() {
                 return (
 
                   <article className="partner-type-card" key={item.title}>
+
+                    <img className="partner-type-image" src={item.image} alt={item.title} loading="lazy" />
 
                     <div className="partner-icon-box">
 
@@ -411,21 +363,20 @@ function Partner() {
 
 
 
-            <div className="partner-benefit-panel">
+<div className="partner-benefit-panel">
+  <img
+    className="partner-benefit-image"
+    src="/images/partner-benefits.png"
+    alt="Hợp tác kinh doanh cùng DISA"
+  />
 
-              {benefits.map((benefit) => (
-
-                <div className="partner-benefit-highlight" key={benefit}>
-
-                  <CheckCircle size={21} />
-
-                  <span>{benefit}</span>
-
-                </div>
-
-              ))}
-
-            </div>
+  {benefits.map((benefit) => (
+    <div className="partner-benefit-highlight" key={benefit}>
+      <CheckCircle size={21} />
+      <span>{benefit}</span>
+    </div>
+  ))}
+</div>
 
           </div>
 

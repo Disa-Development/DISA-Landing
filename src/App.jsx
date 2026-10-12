@@ -47,26 +47,21 @@ const features = [
 ];
 
 const screenshots = [
-  {
-    title: "Trang chủ DISA",
-    image: "/images/app-home.png",
-    description: "Khám phá các tính năng của ứng dụng."
-  },
-  {
-    title: "Tạo lịch trình",
-    image: "/images/app-itinerary.png",
-    description: "Lên kế hoạch cho hành trình của bạn."
-  },
-  {
-    title: "Nhiệm vụ",
-    image: "/images/app-missions.png",
-    description: "Chụp ảnh, quay video và nhận điểm."
-  },
-  {
-    title: "Lịch sử nhiệm vụ",
-    image: "/images/app-history.png",
-    description: "Xem lại những nhiệm vụ đã thực hiện."
-  }
+  { title: 'Màn hình khởi động', image: "/images/disa-screen-00.jpg", description: 'Nhận diện ứng dụng DISA Travel.' },
+  { title: 'Đăng nhập', image: "/images/disa-screen-01.jpg", description: 'Truy cập tài khoản DISA.' },
+  { title: 'Đăng ký tài khoản', image: "/images/disa-screen-02.jpg", description: 'Bắt đầu hành trình cùng DISA.' },
+  { title: 'Trang chủ DISA', image: "/images/disa-screen-03.jpg", description: 'Khám phá hành trình, nhiệm vụ và ưu đãi.' },
+  { title: 'Tạo lịch trình', image: "/images/disa-screen-04.jpg", description: 'Lựa chọn điểm đến, ngày đi và ngân sách.' },
+  { title: 'Lịch trình cá nhân', image: "/images/disa-screen-05.jpg", description: 'Xem lịch trình với địa điểm và dịch vụ.' },
+  { title: 'Chi tiết hành trình', image: "/images/disa-screen-06.jpg", description: 'Theo dõi các hoạt động trong chuyến đi.' },
+  { title: 'Lịch trình của tôi', image: "/images/disa-screen-07.jpg", description: 'Quản lý những chuyến đi đã tạo.' },
+  { title: 'AI Guide', image: "/images/disa-screen-08.jpg", description: 'Khám phá tính năng dịch thuật.' },
+  { title: 'Nhiệm vụ đang thực hiện', image: "/images/disa-screen-09.jpg", description: 'Chụp ảnh và quay video để nhận thưởng.' },
+  { title: 'Nhiệm vụ đã hoàn thành', image: "/images/disa-screen-10.jpg", description: 'Theo dõi thành quả và điểm nhận được.' },
+  { title: 'Voucher', image: "/images/disa-screen-11.jpg", description: 'Khám phá các ưu đãi du lịch.' },
+  { title: 'Tài khoản cá nhân', image: "/images/disa-screen-12.jpg", description: 'Xem thông tin và điểm tích lũy.' },
+  { title: 'Cài đặt ứng dụng', image: "/images/disa-screen-13.jpg", description: 'Điều chỉnh thông tin và trải nghiệm.' },
+  { title: 'Tùy chọn & bảo mật', image: "/images/disa-screen-14.jpg", description: 'Quản lý quyền riêng tư và ứng dụng.' }
 ];
 
 const guides = [
@@ -183,7 +178,7 @@ function Hero() {
 
           <div className="phone-frame">
             <img
-              src="/images/app-home.png"
+              src="/images/disa-screen-03.jpg"
               alt="Giao diện trang chủ DISA"
             />
           </div>
@@ -261,21 +256,14 @@ function Screenshots() {
         </div>
 
         <div className="screenshots-grid">
-          {screenshots.map((screen, index) => (
+          {screenshots.map((screen) => (
             <div className="screenshot-card" key={screen.title}>
               <div className="screenshot-image">
-                {index === 0 ? (
-                  <img
-                    src={screen.image}
-                    alt={screen.title}
-                    loading="lazy"
-                  />
-                ) : (
-                  <div className="screen-placeholder">
-                    <Smartphone size={55} />
-                    <span>Thêm ảnh giao diện</span>
-                  </div>
-                )}
+                <img
+                  src={screen.image}
+                  alt={screen.title}
+                  loading="lazy"
+                />
               </div>
 
               <h3>{screen.title}</h3>

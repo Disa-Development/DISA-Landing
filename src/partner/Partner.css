@@ -56,27 +56,33 @@
 
 
 .partner-brand {
+
   display: flex;
+
   align-items: center;
-  justify-content: flex-start;
-  gap: 12px;
+
+  gap: 10px;
+
   color: #12386b;
+
   text-decoration: none;
+
   font-weight: 800;
-  flex-shrink: 0;
+
 }
 
+
+
 .partner-brand img {
-  display: block;
-  width: 240px;
-  height: 105px;
-  max-width: none;
-  max-height: none;
+
+  width: 44px;
+
+  height: 44px;
+
   object-fit: contain;
-  object-position: left center;
-  transform: scale(1.8);
-  transform-origin: left center;
+
 }
+
 
 
 .partner-brand span {
@@ -146,15 +152,15 @@
 }
 
 
-
 .partner-hero {
-
+  position: relative;
   padding: 90px 0;
-
   overflow: hidden;
 
-  background: linear-gradient(135deg, #f2f8ff, #ffffff 65%, #e9f9fc);
-
+  background-image: url("/images/hero-background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -643,6 +649,21 @@
 
   box-shadow: 0 15px 45px #17324f0c;
 
+}
+/* Ảnh hợp tác nằm bên phải, phía trên 4 lợi ích */
+.partner-benefit-image {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+}
+
+@media (max-width: 760px) {
+  .partner-benefit-image {
+    height: 210px;
+  }
 }
 
 
@@ -1323,11 +1344,45 @@
 
 }
 .partner-page h1, .partner-page h2, .partner-page h3, .partner-page button, .partner-page input, .partner-page select, .partner-page textarea { font-family: inherit; }
-.partner-nav .partner-container {
-  width: 94%;
-  max-width: none;
+
+/* Ảnh chụp ứng dụng thực tế ở khu vực giới thiệu Partner */
+.partner-hero-art { min-width: 0; padding: 16px 0; }
+.partner-screen-gallery { position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 0; width: 100%; min-height: 475px; overflow: visible; }
+.partner-screen { display: block; width: 34%; height: 390px; object-fit: cover; object-position: top; border: 5px solid #fff; border-radius: 23px; box-shadow: 0 18px 40px rgba(16, 46, 85, .18); background: #f2f7fc; }
+.partner-screen-left { transform: translateX(25px) rotate(-9deg) scale(.88); }
+.partner-screen-main { position: relative; z-index: 2; width: 39%; height: 450px; transform: translateY(-8px); }
+.partner-screen-right { transform: translateX(-25px) rotate(9deg) scale(.88); }
+@media (max-width: 700px) {
+  .partner-screen-gallery { min-height: 350px; }
+  .partner-screen { height: 280px; border-width: 3px; border-radius: 17px; }
+  .partner-screen-main { height: 325px; }
 }
-.partner-brand img {
-  transform: scale(1.4);
-  transform-origin: left center;
+
+
+/* Anh thuc te cho bon loai hinh doi tac */
+.partner-type-card {
+  overflow: hidden;
+  padding: 0 0 26px;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.partner-type-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px rgba(16, 46, 85, .12);
+}
+.partner-type-image {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+  margin-bottom: 24px;
+}
+.partner-type-card .partner-icon-box,
+.partner-type-card h3,
+.partner-type-card p {
+  margin-left: 26px;
+  margin-right: 26px;
+}
+@media (max-width: 760px) {
+  .partner-type-image { height: 200px; }
 }
