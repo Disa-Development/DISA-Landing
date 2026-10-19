@@ -1,0 +1,43 @@
+/* DISA Partner: Policy + QR payment (scoped) */
+.partner-policy-section { padding: 42px 0; background: #f3f8fc; color: #17395e; }
+.partner-policy-container { max-width: 1050px; margin: 0 auto; padding: 0 20px; }
+.partner-policy-heading { text-align: center; margin-bottom: 28px; }
+.partner-policy-heading > span { color: #087da7; font-size: 13px; font-weight: 800; letter-spacing: 2px; }
+.partner-policy-heading h2 { font-size: clamp(25px, 4vw, 38px); color: #12386b; margin: 12px 0; }
+.partner-policy-heading p { color: #64748b; line-height: 1.7; }
+.partner-policy-business { background: white; border: 1px solid #dfe9f2; border-radius: 14px; padding: 16px 20px; margin-bottom: 22px; }
+.partner-policy-business strong { color: #12386b; }
+.partner-policy-price { text-align: center; padding: 30px; border-radius: 20px; background: linear-gradient(130deg, #12386b, #087da7); color: white; margin-bottom: 24px; }
+.partner-policy-price > span { font-size: 12px; font-weight: 800; letter-spacing: 2px; }
+.partner-policy-price h2 { font-size: 32px; color: white; margin: 12px 0; }
+.partner-policy-price p { color: #e5f6ff; line-height: 1.7; }
+.partner-policy-benefits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-bottom: 24px; }
+.partner-policy-benefits article { background: white; padding: 25px; border: 1px solid #dfe9f2; border-radius: 17px; }
+.partner-policy-benefits svg { color: #087da7; }
+.partner-policy-benefits h3 { margin: 15px 0 8px; color: #12386b; font-size: 18px; }
+.partner-policy-benefits p { color: #64748b; line-height: 1.7; }
+.partner-policy-terms { background: white; border: 1px solid #dfe9f2; padding: 28px; border-radius: 18px; }
+.partner-policy-terms h3 { color: #12386b; margin: 0 0 15px; }
+.partner-policy-terms ul { padding-left: 22px; color: #475569; line-height: 1.9; }
+.partner-policy-consent { display: flex; gap: 12px; align-items: flex-start; margin-top: 18px; padding: 17px; background: #edf8ff; border-radius: 12px; cursor: pointer; }
+.partner-policy-consent input { width: 18px; height: 18px; flex-shrink: 0; accent-color: #087da7; margin-top: 3px; }
+.partner-policy-actions { display: flex; justify-content: space-between; gap: 16px; margin-top: 22px; }
+.partner-policy-btn, .partner-policy-back { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 14px 22px; border-radius: 11px; font-size: 15px; font-weight: 700; cursor: pointer; }
+.partner-policy-btn { border: none; color: white; background: #087da7; }
+.partner-policy-btn:disabled { background: #a6bdc8; cursor: not-allowed; }
+.partner-policy-back { border: 1px solid #cad9e7; color: #12386b; background: white; }
+.partner-policy-note { text-align: center; color: #64748b; margin-top: 18px; font-size: 13px; line-height: 1.6; }
+.partner-payment-container { max-width: 760px; padding: 0 16px; margin: 0 auto; }
+.partner-payment-card { background: white; border: 1px solid #e2e8f0; border-radius: 22px; text-align: center; padding: 32px; box-shadow: 0 12px 35px rgba(18,56,107,.08); }
+.partner-payment-card h3 { display: flex; justify-content: center; align-items: center; gap: 10px; color: #12386b; }
+.partner-payment-status { display: inline-block; background: #fff7ed; color: #9a3412; border-radius: 30px; padding: 8px 15px; font-size: 13px; font-weight: 700; margin-bottom: 16px; }
+.partner-payment-qr { max-width: 310px; margin: 20px auto; padding: 10px; border: 1px solid #dce6ef; border-radius: 15px; }
+.partner-payment-qr img { display: block; width: 100%; height: auto; object-fit: contain; }
+.partner-payment-bank { background: #f3f8fc; border-radius: 15px; padding: 14px 20px; margin-top: 18px; text-align: left; }
+.partner-payment-bank > div { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; padding: 13px 0; border-bottom: 1px solid #dce6ef; }
+.partner-payment-bank > div:last-child { border-bottom: none; }
+.partner-payment-bank span { color: #64748b; }
+.partner-payment-bank strong { color: #12386b; overflow-wrap: anywhere; }
+.partner-payment-account button { display: inline-flex; align-items: center; gap: 6px; background: white; border: 1px solid #b9cfdf; color: #087da7; padding: 8px; border-radius: 9px; cursor: pointer; }
+.partner-payment-warning { background: #fff7ed; color: #9a3412; border-radius: 12px; padding: 16px; line-height: 1.7; font-size: 14px; margin: 20px 0; }
+@media (max-width: 760px) { .partner-policy-benefits { grid-template-columns: 1fr; } .partner-policy-actions { flex-direction: column; } .partner-payment-card { padding: 20px 14px; } .partner-payment-bank > div { flex-direction: column; align-items: flex-start; } }

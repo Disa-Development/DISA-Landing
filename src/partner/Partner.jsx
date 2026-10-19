@@ -1,4 +1,6 @@
 import { useState } from "react";
+import PartnerPolicy from "./PartnerPolicy.jsx";
+import "./PartnerPolicy.css";
 
 import { Link } from "react-router-dom";
 
@@ -838,9 +840,9 @@ function Partner() {
 
 }
 
-
-
 function PartnerContactForm() {
+  const [step, setStep] = useState("register");
+  const [partnerData, setPartnerData] = useState(null);
 
   const [form, setForm] = useState({
 
@@ -862,8 +864,6 @@ function PartnerContactForm() {
 
   });
 
-  const [submitted, setSubmitted] = useState(false);
-
 
 
   const updateField = (event) => {
@@ -883,59 +883,24 @@ function PartnerContactForm() {
 
 
   const handleSubmit = (event) => {
-
     event.preventDefault();
-
-    setSubmitted(true);
-
+    if (!form.consent) return;
+    setPartnerData({ ...form });
+    setStep("policy");
   };
 
 
 
-  if (submitted) {
-
+  if (step === "policy") {
     return (
-
-      <div className="partner-form-success">
-
-        <CheckCircle size={34} />
-
-        <h3>Đã kiểm tra biểu mẫu</h3>
-
-        <p>
-
-          Đây mới là bản demo giao diện. Thông tin chưa được gửi đến
-
-          máy chủ DISA. Cần tích hợp API tiếp nhận chính thức trước khi
-
-          sử dụng thực tế.
-
-        </p>
-
-        <button
-
-          type="button"
-
-          className="partner-btn partner-btn-blue"
-
-          onClick={() => setSubmitted(false)}
-
-        >
-
-          Quay lại biểu mẫu
-
-        </button>
-
-      </div>
-
+      <PartnerPolicy
+        partnerData={partnerData}
+        onBack={() => setStep("register")}
+      />
     );
-
   }
 
-
-
   return (
-
     <form className="partner-form" onSubmit={handleSubmit}>
 
       <div className="partner-form-intro">
@@ -1172,7 +1137,7 @@ function PartnerContactForm() {
 
       <button type="submit" className="partner-btn partner-btn-blue partner-submit">
 
-        Kiểm tra thông tin đăng ký <ArrowRight size={18} />
+        Tiếp tục xem chính sách hợp tác <ArrowRight size={18} />
 
       </button>
 
