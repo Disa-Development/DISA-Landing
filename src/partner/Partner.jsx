@@ -1,3 +1,4 @@
+import { Link as PortalLink } from "react-router-dom";
 import { useState } from "react";
 import PartnerPolicy from "./PartnerPolicy.jsx";
 import "./PartnerPolicy.css";
@@ -841,6 +842,7 @@ function Partner() {
 }
 
 function PartnerContactForm() {
+  // Form giới thiệu hiện tại được giữ nguyên; đăng ký tài khoản thực hiện ở trang riêng.
   const [step, setStep] = useState("register");
   const [partnerData, setPartnerData] = useState(null);
 
@@ -901,7 +903,7 @@ function PartnerContactForm() {
   }
 
   return (
-    <form className="partner-form" onSubmit={handleSubmit}>
+    <div><p><PortalLink to="/partner/register">Đăng ký tài khoản đối tác để gửi yêu cầu lên hệ thống</PortalLink> · <PortalLink to="/login">Đăng nhập đối tác</PortalLink></p><form className="partner-form" onSubmit={handleSubmit}>
 
       <div className="partner-form-intro">
 
@@ -1151,7 +1153,7 @@ function PartnerContactForm() {
 
       </p>
 
-    </form>
+    </form></div>
 
   );
 

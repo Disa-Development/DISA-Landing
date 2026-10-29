@@ -105,6 +105,7 @@ function Navbar() {
           <a href="#screenshots" onClick={closeMenu}>Giao diện</a>
 <a href="#guide" onClick={closeMenu}>Hướng dẫn</a>
 
+<Link to="/login" onClick={closeMenu}>Đăng nhập</Link>
 <Link to="/partner" onClick={closeMenu}>
   Đối tác doanh nghiệp
 </Link>
