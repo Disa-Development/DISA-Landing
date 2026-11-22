@@ -349,6 +349,7 @@ function UserGuide() {
   );
 }
 
+
 function DownloadBanner() {
   return (
     <section className="download-section" id="download">
@@ -367,14 +368,35 @@ function DownloadBanner() {
           và tích lũy điểm thưởng.
         </p>
 
-        <a
-          href="https://disatravel.id.vn/downloads/DisaTravel.apk"
-          className="btn btn-gold download-button"
-          download="DisaTravel.apk"
-        >
-          <Download size={23} />
-          Tải DISA APK
-        </a>
+        {/* Hai nút tải ứng dụng */}
+        <div className="download-buttons">
+          <a
+            href="https://disatravel.id.vn/downloads/DisaTravel.apk"
+            className="btn btn-gold download-button"
+            download="DisaTravel.apk"
+          >
+            <Download size={23} />
+            Tải DISA APK
+          </a>
+
+          <a
+            href="https://play.google.com/store/apps/details?id=com.disa.travel.frontend"
+            className="btn download-google-play"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="23"
+              height="23"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path d="M3 2.5v19l10.5-9.5L3 2.5Zm12 8.2 3.2-2.9L5.5 1.2 15 10.7Zm0 2.6-9.5 9.5 12.7-6.6-3.2-2.9Zm4.5-4.7L16.4 12l3.1 3.4 2.1-1.1c1.9-1 1.9-3.6 0-4.6l-2.1-1.1Z" />
+            </svg>
+            Tải trên Google Play
+          </a>
+        </div>
 
         <div className="download-info">
           <span>
@@ -391,6 +413,7 @@ function DownloadBanner() {
     </section>
   );
 }
+
 function Footer() {
   return (
     <footer className="footer">

@@ -1167,3 +1167,55 @@ h1, h2, h3, h4, h5, h6, button, a { font-family: "Be Vietnam Pro", "Segoe UI", A
   .screenshot-card h3 { font-size: 15px; }
 }
 @media (max-width: 360px) { .screenshots-grid { grid-template-columns: 1fr; max-width: 270px; margin: auto; } }
+
+/* DISA DOWNLOAD BUTTONS */
+
+.download-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  margin-bottom: 20px;
+}
+
+.download-buttons .download-button,
+.download-buttons .download-google-play {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 54px;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.download-google-play {
+  background: #ffffff;
+  color: #12386b;
+  border: 2px solid #ffffff;
+}
+
+.download-buttons .download-button:hover,
+.download-buttons .download-google-play:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  .download-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .download-buttons .download-button,
+  .download-buttons .download-google-play {
+    width: 100%;
+    max-width: 330px;
+  }
+}
